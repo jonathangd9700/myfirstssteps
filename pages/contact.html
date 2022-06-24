@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@700&display=swap" rel="stylesheet">
+        <title>Moruk</title>
+    </head>
+    <body>
+        <div class="container__grid">
+            <!-- MENU DE NAVEGACION -->
+        <header class="container__header">
+            <nav>
+                <div class="container__header--logo">
+                    <a href="../index.html"><img src="../images/logos/logomoruk.jpg" alt="logo moruk"></a>
+                </div>
+        
+                <ul>
+                    <a href="../index.html"><li>Inicio</li></a>
+                    <a href="./products.html"><li>Ilustraciones</li></a>
+                    <a href="./aboutme.html"><li>Quienes somos?</li></a>
+                    <a href="./contact.html"><li class="menu__nav--li-sombreado">Contacto</li></a>
+                    <a href="./faq.html"><li>FAQ</li></a>
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <!-- FORMULARIO DE CONTACTO -->
+            <section>
+                <div class="position__title">
+                <h2>Contacto</h2>
+                </div>
+                <form>   
+                    <div class="contenedor__contacto--form">
+                        <div class="container__contact--form"> 
+                            <label for="input-nombre">Ingrese su nombre:</label>
+                                <input type="text" placeholder="Escriba su nombre..." id="input-nombre" name="input-nombre" class="contacto__input">
+                        </div>
+                        <div class="container__contact--form"> 
+                            <label for="input-apellido">Ingrese su apellido:</label>
+                                <input type="text" placeholder="Escriba su apellido..." id="input-apellido" name="input-apellido" class="contacto__input">
+                        </div>
+                        <div class="container__contact--form"> 
+                        <label for="input-mail">Ingrese su mail:</label>
+                            <input type="mail" placeholder="ejemplo@email.com" id="input-mail" name="input-mail" required class="contacto__input">
+                        </div>    
+                        <div class="container__contact--form"> 
+                            <label for="input-tel">Ingrese su telefono:</label>
+                                <input type="tel" placeholder="Escriba su telefono..." id="input-tel" name="input-tel" class="contacto__input"> 
+                        </div>    
+                        <div class="container__contact--form"> 
+                            <label for="textarea-contacto">Dejenos su consulta:</label>
+                                <textarea placeholder="Escriba su consulta:" cols="30" rows="10" id="textarea-contacto" name="textarea-contacto"></textarea>
+                        </div>
+                        <!-- BOTONES FORMULARIO       -->
+                        <div class="form__buttons--positions">
+                            <label for="boton-enviar"></label>
+                                <input type="submit" value="Enviar" id="boton-enviar" name="boton-enviar">
+                            <label for="boton-reset"></label>
+                                <input type="reset" value="Borrar" id="boton-reset" name="boton-reset">
+                        </div>
+                </div>  
+                </form>
+            </section>
+        </main>
+        <!-- PIE DE PAGINA -->
+        <footer class="container__footer">
+            <a href="https://www.instagram.com/moruk.ok/" target="_blank"><img src="../images/logos/instagramlogo.png" alt="logo de instagram" class="container__footer--img"></a>
+            <a href="https://espanol.yahoo.com/?p=us" target="_blank"><img src="../images/logos/yahoologo.png" alt="logo de email" class="container__footer--img"></a>
+            <a href="https://web.whatsapp.com/"><img src="../images/logos/whatsapplogo.png" alt="logo de whatsapp" class="container__footer--img"></a>
+        </footer>
+        </div>
+    </body>
+</html>

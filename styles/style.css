@@ -155,7 +155,13 @@ footer{
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
+@media(min-width: 1440px){
+    .container__grid--auto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 12vh 80vh auto;
+    }
+}
     .illustrations{
         width: 40vw;
         height: 40vh;

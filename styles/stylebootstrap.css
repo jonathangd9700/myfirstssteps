@@ -1,0 +1,29 @@
+.bg-color-bootstrap{
+    background-color: rgba(179, 128, 228, 0.582)
+}
+a {
+    text-decoration: none;
+}
+.container__footer--bootstrap li:hover{
+    animation: transition--menu--left 500ms forwards;
+}
+@keyframes transition--menu--left{
+    from{transform: translateX(0);}
+    to{transform: translateX(-10px);}
+}
+.txt__navbar ul li:hover{
+    font-weight: bolder;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.671);
+    animation: transition--menu--up 500ms forwards;
+}
+@keyframes transition--menu--up{
+    from{transform: translateY(0);}
+    to{transform: translateY(-10px);}
+}
+.illustrations{
+    transition: box-shadow 300ms ease-in 200ms, transform 400ms ease-in;
+}
+.illustrations:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 5px 3px rgba(145, 80, 206, 0.644);
+}

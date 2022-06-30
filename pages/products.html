@@ -4,68 +4,101 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/stylebootstrap.css">
         <title>Moruk</title>
     </head>
     <body>
-        <div class="container__grid">
-            <!-- MENU DE NAVEGACION -->
-            <header class="container__header">
-                <nav>
-                    <div class="container__header--logo">
-                        <a href="../index.html"><img src="../images/logos/logomoruk.jpg" alt="logo moruk"></a>
-                    </div>
-            
-                    <ul>
-                        <a href="../index.html"><li>Inicio</li></a>
-                        <a href="./products.html"><li class="menu__nav--li-sombreado">Ilustraciones</li></a>
-                        <a href="./aboutme.html"><li>Quienes somos?</li></a>
-                        <a href="./contact.html"><li>Contacto</li></a>
-                        <a href="./faq.html"><li>FAQ</li></a>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-color-bootstrap">
+                <div class="container-fluid">
+                <div class="d-flex justify-content-sm-between">
+                  <a class="navbar-brand" href="../index.html"><img src="../images/logos/logomoruk.jpg" alt="" class="w-25"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  </div>
+                  <div class="collapse navbar-collapse txt__navbar" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./products.html">Ilustraciones</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./aboutme.html">Sobre mi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">FAQ</a>
+                      </li>
                     </ul>
-                </nav>
-            </header>
-            <!-- ILUSTRACIONES -->
-            <main>
-                <div class="position__title">
-                    <h2>Ilustraciones</h2>
+                  </div>
                 </div>
-                <div class="flex__illustrations">
-                    <img src="../images/illustrations/producto1.jpeg" alt="vaso de cocteleria con una rodaja de limon con hielos, sostenido por raices" class="illustrations">
-                    <img src="../images/illustrations/producto2.jpeg" alt="luna creciente con flores" class="illustrations">
-                    <img src="../images/illustrations/producto3.jpeg" alt="porcion pizza caricatura sonriente saludando feliz cumpleaños" class="illustrations">
-                    <img src="../images/illustrations/producto4.jpeg" alt="pantera negra reposada en un arbol en la selva" class="illustrations">
-                    <img src="../images/illustrations/producto5.jpeg" alt="" class="illustrations">
-                    <img src="../images/illustrations/producto6.jpeg" alt="cabeza de perro border collie ilustada" class="illustrations">
-                    <img src="../images/illustrations/producto7.jpeg" alt="dinosaurio violeta caricatura" class="illustrations">
-                    <img src="../images/illustrations/producto8.jpeg" alt="animal de tres ojos con cuernos y orejas de cabra, cuerpo de gato sosteniendo llave con cadenas" class="illustrations">
-                    <img src="../images/illustrations/producto9.jpeg" alt="ilustracion cabeza de gato" class="illustrations">
-                    <img src="../images/illustrations/producto10.jpeg" alt="ilustracion ranita verde obrera" class="illustrations">
-                    <img src="../images/illustrations/producto11.jpeg" alt="ilustracion ranita colorida violeta y negro" class="illustrations">
+              </nav>
+        </header>
+        <main class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto1.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
                 </div>
-            </main>
-            <!-- PIE DE PAGINA -->
-            <footer class="container__footer">
-                <h3>Moruk</h3>
-                <p>Visita nuestras redes!</p>
-                <div class="container__elements--position">
-                    <div class="container__footer--img">
-                        <a href="https://www.instagram.com/moruk.ok/" target="_blank"><img src="../images/logos/instagramlogo.png" alt="logo de instagram" class="footer--img"></a>
-                        <a href="https://espanol.yahoo.com/?p=us" target="_blank"><img src="../images/logos/yahoologo.png" alt="logo de email" class="footer--img"></a>
-                        <a href="https://web.whatsapp.com/"><img src="../images/logos/whatsapplogo.png" alt="logo de whatsapp" class="footer--img"></a>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto2.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto3.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto4.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto5.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto6.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto7.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto8.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto9.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto10.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="../images/illustrations/producto11.jpeg" alt="" class="w-100 px-5-sm my-3 px-0-lg illustrations">
+                </div>
+        </main>
+        <footer>
+            <div class="row bg-color-bootstrap">
+                <div class="col-6">
+                    <div class="d-flex justify-content-center">
+                        <strong><p class="text-white">Visita nuestras redes!</p></strong>
                     </div>
-                    <div class="container__nav--footer">
-                        <ul>
-                            <a href="../index.html"><li>Inicio</li></a>
-                            <a href="products.html"><li  class="menu__nav--li-sombreado">Ilustraciones</li></a>
-                            <a href="aboutme.html" ><li>Quienes somos?</li></a>
-                            <a href="contact.html"><li>Contacto</li></a>
-                            <a href="faq.html"><li>FAQ</li></a>
-                        </ul>
-                    </div>
+                    <a href="https://www.instagram.com/moruk.ok/" target="_blank"><img src="./images/logos/instagramlogo.png" alt="instagramlogo" class="w-25"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="./images/logos/whatsapplogo.png" alt="whatsapplogo" class="w-25"></a>
+                    <a href="https://espanol.yahoo.com/?p=us" target="_blank"></a><img src="./images/logos/yahoologo.png" alt="yahoologo" class="w-25"></a>
                 </div>
-            </footer>
-        </div>
+                <div class="col-6 d-flex justify-content-evenly align-items-sm-center container__footer--bootstrap">
+                    <ul>
+                        <a href="index.html"><li class="text-white">Inicio</li></a>
+                        <a href="./pages/products.html"><li class="text-white">Ilustraciones</li></a>
+                        <a href="./pages/aboutme.html"><li class="text-white">Quienes somos?</li></a>
+                        <a href="./pages/contact.html"><li class="text-white">Contacto</li></a>
+                        <a href="./pages/faq.html"><li class="text-white">FAQ</li></a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>

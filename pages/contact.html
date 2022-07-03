@@ -15,33 +15,33 @@
             <header>
                 <nav class="navbar navbar-expand-lg bg-color-bootstrap container-fluid">
                     <div class="container-fluid">
-                    <div class="d-flex justify-content-sm-between">
-                      <a class="navbar-brand" href="../index.html"><img src="../images/logos/logomoruk.jpg" alt="" class="w-25"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      </div>
-                      <div class="collapse navbar-collapse txt__navbar" id="navbarNavDropdown">
-                        <ul class="navbar-nav mx-3">
-                          <li class="nav-item fw-bolder">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="products.html">Ilustraciones</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="aboutme.html">Sobre mi</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="faq.html">FAQ</a>
-                          </li>
-                        </ul>
-                      </div>
+                        <div class="d-flex justify-content-sm-between">
+                            <a class="navbar-brand" href="../index.html"><img src="../images/logos/logomoruk.jpg" alt="" class="w-25"></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse txt__navbar" id="navbarNavDropdown">
+                            <ul class="navbar-nav mx-3">
+                                <li class="nav-item fw-bolder">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">Ilustraciones</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutme.html">Sobre mi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contacto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                  </nav>
+                </nav>
             </header>
         <main>
             <!-- FORMULARIO DE CONTACTO -->
@@ -49,22 +49,21 @@
                 <form action="">
                     <div class="container my-3">
                         <div class="row justify-content-md-between">
-                        <div class="row col-12 col-md-6">
-                            <input type="text" class="form-control my-2 input_style" placeholder="Ingrese su nombre" aria-label="Ingrese su nombre" id="nombre" required>
-                            <input type="text" class="form-control my-2 input_style" placeholder="Ingrese su apellido" aria-label="Ingrese su apellido" id="apellido">
-                            <input type="text" class="form-control my-2 input_style" placeholder="nombre@ejemplo.com" aria-label="Ingrese su email" id="email"required>
-                            <input type="tel" class="form-control my-2 input_style" placeholder="Cod Area. + 12345678"  id="email" required>
-                            <select name="genero" id="genero" class="form-control my-2 input_style">
-                                <option value="femenino">Femenino</option>
-                                <option value="masculino">Masculino</option>
-                                <option value="sinEspecificar" selected>Sin espeficar...</option> 
-                              </select>
+                            <div class="row col-12 col-md-6">
+                                <input type="text" class="form-control my-2 input_style" placeholder="Ingrese su nombre" aria-label="Ingrese su nombre" id="nombre" required>
+                                <input type="text" class="form-control my-2 input_style" placeholder="Ingrese su apellido" aria-label="Ingrese su apellido" id="apellido">
+                                <input type="text" class="form-control my-2 input_style" placeholder="nombre@ejemplo.com" aria-label="Ingrese su email" id="email"required>
+                                <input type="tel" class="form-control my-2 input_style" placeholder="Cod Area. + 12345678"  id="email" required>
+                                <select name="genero" id="genero" class="form-control my-2 input_style">
+                                    <option value="femenino">Femenino</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="sinEspecificar" selected>Sin espeficar...</option> 
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <textarea class="form-control" name="contact__consulta" id="contact__consulta" cols="50" rows="10" placeholder="Escriba su consulta" maxlength="300"></textarea>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <textarea class="form-control" name="contact__consulta" id="contact__consulta" cols="50" rows="10" placeholder="Escriba su consulta" maxlength="300"></textarea>
-
-                        </div>
-                    </div>
                         <div class="row">
                             <div class="d-flex justify-content-center">
                                 <button class="btn-enviar my-3" id="btn-enviar">Enviar</button>
@@ -73,6 +72,7 @@
                     </div>
                 </form>
             </section>
+            <!-- GOOGLE MAPS -->
             <section>
                 <div class="container-fluid">
                 <div class="row justify-content-md-between">
@@ -100,6 +100,7 @@
                     <div class="d-flex justify-content-center">
                         <p class="text-white fs-3 fw-bold">Visita nuestras redes!</p>
                     </div>
+                    <!-- IMAGENES REDES -->
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-4">
@@ -114,6 +115,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- NAVEGACION FOOTER -->
                 <div class="col-12 col-sm-6 d-flex justify-content-sm-end align-items-sm-center container__footer--bootstrap">
                     <ul>
                         <a href="../index.html"><li class="text-white mx-3 d-inline d-sm-block">Inicio</li></a>

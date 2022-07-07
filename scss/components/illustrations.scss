@@ -1,0 +1,8 @@
+.illustrations{
+    border-radius: 10px;
+    transition: box-shadow 200ms ease-in 200ms, transform 200ms ease-in;
+    &_hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 5px 3px rgba(145, 80, 206, 0.644);
+    }
+}

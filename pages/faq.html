@@ -4,89 +4,144 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/stylesass.css">
+        <link rel="icon" href="../images/logos/logomoruk.jpg">
         <title>Moruk</title>
     </head>
     <body>
-        <div class="container__grid">
-            <!-- MENU DE NAVEGACION -->
-        <header class="container__header">
-            <nav>
-                <div class="container__header--logo">
-                    <a href="../index.html"><img src="../images/logos/logomoruk.jpg" alt="logo moruk"></a>
+        <!-- MENU DE NAVEGACION -->
+        <header>
+            <nav class="navbar navbar-expand-sm bg-color-bootstrap container-fluid">
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-sm-between">
+                        <a class="navbar-brand" href="../index.html"><img src="../images/logos/logomoruk.jpg" alt="" class="w-25"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span><img src="../images/logos/menu.png" alt=""></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse txt__navbar" id="navbarNavDropdown">
+                        <ul class="navbar-nav mx-3">
+                            <li class="nav-item fw-bolder">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="products.html">Ilustraciones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutme.html">Sobre mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul>
-                    <a href="../index.html"><li>Inicio</li></a>
-                    <a href="./products.html"><li>Ilustraciones</li></a>
-                    <a href="./aboutme.html"><li>Quienes somos?</li></a>
-                    <a href="./contact.html"><li>Contacto</li></a>
-                    <a href="./faq.html"><li class="menu__nav--li-sombreado">FAQ</li></a>
-                </ul>
             </nav>
-
         </header>
         <main>
             <!-- PREGUNTAS Y RESPUESTAS -->
             <section>
-                <div class="position__title">
-                <h2>Preguntas frecuentes</h2>
+                <h2 class="py-3 mb-4">Preguntas frecuentes</h2>
+                <article>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item py-2">
+                            <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Pregunta 1?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis similique voluptatibus dolor minus cupiditate laboriosam possimus. Doloribus nemo, tempore ducimus ratione error minus vitae optio assumenda dolorem et facere necessitatibus?
+                               Nobis doloremque quibusdam, saepe officia facilis exercitationem? Temporibus quidem, consequatur voluptas esse exercitationem quisquam aut explicabo, totam magnam non soluta 
+                        </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item py-2">
+                        <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        ¿Pregunta 2?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis similique voluptatibus dolor minus cupiditate laboriosam possimus. Doloribus nemo, tempore ducimus ratione error minus vitae optio assumenda dolorem et facere necessitatibus?
+                           Nobis doloremque quibusdam, saepe officia facilis exercitationem? Temporibus quidem, consequatur voluptas esse exercitationem quisquam aut explicabo, totam magnam non soluta 
+                    </div>
+                    </div>
                 </div>
-                <article>
-                    <div class="container__faq--questions">
-                        <p class="faq__questions">¿Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, tenetur.?</p>
-                    </div>
-                    <div class="container__faq--answers">
-                    <p class="faq__answers">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, totam excepturi. Nesciunt nam, dolorem a repudiandae voluptatibus quo odio nemo quis laboriosam ea quos quas quidem recusandae et, nostrum magni.</p>
-                    </div>
-                </article>
-                <article>
-                    <div class="container__faq--questions">
-                        <p class="faq__questions">¿Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, deleniti magni ipsa accusamus voluptates obcaecati?</p>
-                    </div>
-                    <div class="container__faq--answers">
-                    <p class="faq__answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati vero voluptates commodi mollitia consequatur quis qui ad vitae minima. Natus, voluptatem laborum earum voluptates at veniam deserunt eveniet ratione ea voluptatum, tempora quibusdam necessitatibus perferendis ipsa corrupti sunt vitae repudiandae?</p>
-                    </div>
-                </article>
-                <article>
-                    <div class="container__faq--questions">
-                        <p class="faq__questions">¿Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo odio quia ipsa animi id similique ipsam?</p>
-                    </div>
-                    <div class="container__faq--answers">
-                    <p class="faq__answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum totam, quis quisquam necessitatibus error accusamus aut expedita veniam eveniet dolores.</p>
-                    </div>
-                </article>
-                <article>
-                    <div class="container__faq--questions">
-                    <p class="faq__questions">¿Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia optio at iure! Debitis dolorum voluptatem eaque beatae. Quis sunt quae eius optio.?</p>
-                    </div>
-                    <div class="container__faq--answers">
-                    <p class="faq__answers">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate officia ad rerum? Dignissimos tenetur vitae odio iure voluptas sequi architecto impedit assumenda veniam, aut mollitia. Sapiente ea expedita illo at voluptatum quo sequi placeat dolore laborum reprehenderit, consequatur dolores hic unde eum deleniti earum, saepe fugit sed nihil error optio beatae ab aspernatur ad. Ipsam mollitia inventore reprehenderit nemo ea, quam hic dolorem laboriosam repellendus magni animi omnis minus iste.</p>
+                <div class="accordion-item py-2">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    ¿Pregunta 3?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis similique voluptatibus dolor minus cupiditate laboriosam possimus. Doloribus nemo, tempore ducimus ratione error minus vitae optio assumenda dolorem et facere necessitatibus?
+                       Nobis doloremque quibusdam, saepe officia facilis exercitationem? Temporibus quidem, consequatur voluptas esse exercitationem quisquam aut explicabo, totam magnam non soluta 
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item py-2">
+                <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                ¿Pregunta 4?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis similique voluptatibus dolor minus cupiditate laboriosam possimus. Doloribus nemo, tempore ducimus ratione error minus vitae optio assumenda dolorem et facere necessitatibus?
+                   Nobis doloremque quibusdam, saepe officia facilis exercitationem? Temporibus quidem, consequatur voluptas esse exercitationem quisquam aut explicabo, totam magnam non soluta 
+            </div>
+            </div>
+        </div>
                     </div>
                 </article>
             </section>
         </main>
         <!-- PIE DE PAGINA -->
-        <footer class="container__footer">
-            <h3>Moruk</h3>
-            <p>Visita nuestras redes!</p>
-            <div class="container__elements--position">
-                <div class="container__footer--img">
-                    <a href="https://www.instagram.com/moruk.ok/" target="_blank"><img src="../images/logos/instagramlogo.png" alt="logo de instagram" class="footer--img"></a>
-                    <a href="https://espanol.yahoo.com/?p=us" target="_blank"><img src="../images/logos/yahoologo.png" alt="logo de email" class="footer--img"></a>
-                    <a href="https://web.whatsapp.com/"><img src="../images/logos/whatsapplogo.png" alt="logo de whatsapp" class="footer--img"></a>
+        <footer class="container-fluid mt-2">
+            <div class="row bg-color-bootstrap">
+                <div class="line py-2">
+                <h3>Moruk</h3>
                 </div>
-                <div class="container__nav--footer">
+                <div class="col-12 col-sm-6">
+                    <div class="d-flex justify-content-center">
+                        <p class="text-white fs-3 fw-bold">Visita nuestras redes!</p>
+                    </div>
+                    <!-- IMAGENES REDES -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="https://www.instagram.com/moruk.ok/" target="_blank"><img src="../images/logos/instagramlogo.png" alt="instagramlogo" class="w-50"></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://web.whatsapp.com/" target="_blank"><img src="../images/logos/whatsapplogo.png" alt="whatsapplogo" class="w-50"></a>
+                            </div>
+                            <div class="col-4">    
+                                <a href="https://espanol.yahoo.com/?p=us" target="_blank"><img src="../images/logos/yahoologo.png" alt="yahoologo" class="w-50"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- NAVEGACION FOOTER -->
+                <div class="col-12 col-sm-6 d-flex justify-content-sm-end align-items-sm-center container__footer--bootstrap">
                     <ul>
-                        <a href="../index.html"><li>Inicio</li></a>
-                        <a href="products.html"><li>Ilustraciones</li></a>
-                        <a href="aboutme.html"><li>Quienes somos?</li></a>
-                        <a href="contact.html"><li>Contacto</li></a>
-                        <a href="faq.html"><li  class="menu__nav--li-sombreado">FAQ</li></a>
+                        <a href="../index.html"><li class="text-white mx-3 d-inline d-sm-block">Inicio</li></a>
+                        <a href="products.html"><li class="text-white mx-3 mx-0-sm d-inline d-sm-block">Ilustraciones</li></a>
+                        <a href="aboutme.html"><li class="text-white mx-3 mx-0-sm d-inline d-sm-block">Quienes somos?</li></a>
+                        <a href="contact.html"><li class="text-white mx-3 mx-0-sm d-inline d-sm-block menu__nav--li-sombreado">Contacto</li></a>
+                        <a href="faq.html"><li class="text-white mx-3 mx-0-sm d-inline d-sm-block">FAQ</li></a>
                     </ul>
                 </div>
             </div>
         </footer>
-        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>

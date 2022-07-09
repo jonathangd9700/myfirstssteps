@@ -65,6 +65,7 @@ h3 {
 
 .btn_names {
   width: 190px;
+  margin-top: 13px;
 }
 
 .accordion-button {
@@ -78,6 +79,19 @@ h3 {
 .accordion-button:not(.collapsed) {
   background-color: #fff;
   color: #C396F0;
+}
+
+.illustrations {
+  cursor: pointer;
+  border-radius: 10px;
+  transition: box-shadow 200ms ease-in 200ms, transform 200ms ease-in;
+}
+
+@media (min-width: 700px) {
+  .illustrations:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 3px rgba(145, 80, 206, 0.644);
+  }
 }
 
 /*# sourceMappingURL=stylesass.css.map */

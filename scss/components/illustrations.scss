@@ -9,3 +9,10 @@
         box-shadow: 0 0 5px 3px rgba(145, 80, 206, 0.644);
     }
 }
+.banner{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    min-width: 320px;
+    height: 40vh;
+}

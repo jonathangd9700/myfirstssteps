@@ -4,33 +4,50 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/sassstyle.css">
+        <link rel="icon" href="../images/logos/logomoruk.jpg">
         <title>Moruk</title>
     </head>
     <body>
-        <div class="container__grid">
-            <!-- MENU DE NAVEGACION -->
-        <header class="container__header">
-            <nav>
-                <div class="container__header--logo">
-                    <a href="../index.html"><img src="../images/logos/logomoruk.jpg" alt="logo moruk"></a>
+       <!-- MENU DE NAVEGACION -->
+       <header>
+        <nav class="navbar navbar-expand-lg bg-color-bootstrap container-fluid">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-sm-between">
+                    <a class="navbar-brand" href="../index.html"><img src="../images/logos/logomoruk.jpg" alt="" class="w-25"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><img src="../images/logos/menu.png" alt=""></span>
+                    </button>
                 </div>
-        
-                <ul>
-                    <a href="../index.html"><li>Inicio</li></a>
-                    <a href="./products.html"><li>Ilustraciones</li></a>
-                    <a href="./aboutme.html"><li class="menu__nav--li-sombreado">Quienes somos?</li></a>
-                    <a href="./contact.html"><li>Contacto</li></a>
-                    <a href="./faq.html"><li>FAQ</li></a>
-                </ul>
-            </nav>
-        </header>
+                <div class="collapse navbar-collapse txt__navbar" id="navbarNavDropdown">
+                    <ul class="navbar-nav mx-3">
+                        <li class="nav-item fw-bolder">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Ilustraciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutme.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
         <!-- ACERCA DE MI -->
         <main>
             <section>
                 <div class="position__title">
-                <h2>¿Quienes somos?</h2>
+                <h2>Sobre mi</h2>
                 </div>
                 <article>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quidem libero provident vitae minus eaque nesciunt suscipit enim ipsa repellat nostrum ipsum, cum commodi sed laborum aliquam delectus similique voluptatibus quo? Magni assumenda accusamus distinctio hic, perspiciatis consectetur! Cumque at quas laborum, alias omnis pariatur optio totam nam ea iusto! Culpa dicta illo, perferendis omnis molestias sint, nesciunt voluptate natus vel quam consequuntur? Optio similique nostrum tenetur voluptatum accusamus commodi quam? Quis repellendus quo ipsam. Incidunt, quibusdam ducimus quod ea nostrum officiis repellat porro mollitia repellendus sunt, expedita ipsa iusto sequi. Quas, facilis assumenda! Deleniti molestias autem numquam qui excepturi?</p>
@@ -38,26 +55,42 @@
             </section>
         </main>
         <!-- PIE DE PAGINA -->
-        <footer class="container__footer">
-            <h3>Moruk</h3>
-            <p>Visita nuestras redes!</p>
-            <div class="container__elements--position">
-                <div class="container__footer--img">
-                    <a href="https://www.instagram.com/moruk.ok/" target="_blank"><img src="../images/logos/instagramlogo.png" alt="logo de instagram" class="footer--img"></a>
-                    <a href="https://espanol.yahoo.com/?p=us" target="_blank"><img src="../images/logos/yahoologo.png" alt="logo de email" class="footer--img"></a>
-                    <a href="https://web.whatsapp.com/"><img src="../images/logos/whatsapplogo.png" alt="logo de whatsapp" class="footer--img"></a>
+        <footer class="container-fluid">
+            <div class="row bg-color-bootstrap">
+                <div class="line">
+                <h3>Moruk</h3>
                 </div>
-                <div class="container__nav--footer">
+                <div class="col-12 col-sm-6">
+                    <div class="d-flex justify-content-center">
+                        <p class="text-white fs-3 fw-bold">Visita nuestras redes!</p>
+                    </div>
+                    <!-- IMAGENES REDES -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="https://www.instagram.com/moruk.ok/" target="_blank"><img src="../images/logos/instagramlogo.png" alt="instagramlogo" class="footer__logo"></a>
+                            </div>
+                            <div class="col-4">
+                                <a href="https://web.whatsapp.com/" target="_blank"><img src="../images/logos/whatsapplogo.png" alt="whatsapplogo" class="footer__logo"></a>
+                            </div>
+                            <div class="col-4">    
+                                <a href="https://espanol.yahoo.com/?p=us" target="_blank"><img src="../images/logos/yahoologo.png" alt="yahoologo" class="footer__logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- NAVEGACION FOOTER -->
+                <div class="col-12 col-sm-6 d-flex justify-content-sm-end align-items-sm-center container__footer--bootstrap">
                     <ul>
-                        <a href="../index.html"><li>Inicio</li></a>
-                        <a href="products.html"><li>Ilustraciones</li></a>
-                        <a href="aboutme.html"><li  class="menu__nav--li-sombreado">Quienes somos?</li></a>
-                        <a href="contact.html"><li>Contacto</li></a>
-                        <a href="faq.html"><li>FAQ</li></a>
+                        <a href="../index.html"><li class="text-white mx-3 d-inline d-sm-block">Inicio</li></a>
+                        <a href="products.html"><li class="text-white mx-3 mx-0-sm d-inline d-sm-block">Ilustraciones</li></a>
+                        <a href="aboutme.html"><li class="text-white mx-3 mx-0-sm d-inline d-sm-block">Sobre mi</li></a>
+                        <a href="contact.html"><li class="text-white mx-3 mx-0-sm d-inline d-sm-block menu__nav--li-sombreado">Contacto</li></a>
+                        <a href="faq.html"><li class="text-white mx-3 mx-0-sm d-inline d-sm-block">FAQ</li></a>
                     </ul>
                 </div>
             </div>
         </footer>
-        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </body>
 </html>

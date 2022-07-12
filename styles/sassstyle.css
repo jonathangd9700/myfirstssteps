@@ -10,6 +10,9 @@ a {
   text-decoration: none;
   color: white;
 }
+a:hover {
+  color: white;
+}
 
 h2 {
   color: white;
@@ -19,6 +22,13 @@ h2 {
 
 h3 {
   color: white;
+}
+
+p {
+  color: #C396F0;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.034);
+  font-size: 1.5rem;
 }
 
 .nav-link {
@@ -40,6 +50,38 @@ h3 {
   font-weight: bolder;
   border-bottom: 2px solid white;
   background-color: rgba(180, 128, 228, 0.521);
+}
+
+.footer__logo {
+  width: 30%;
+  min-width: 40px;
+}
+
+.container__footer--bootstrap li:hover {
+  animation: transition--menu--left 500ms forwards;
+}
+
+@keyframes transition--menu--left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}
+
+.txt_contacto {
+  color: #C396F0;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+
+.txt_contacto:hover {
+  color: white;
+  background-color: #C396F0;
 }
 
 .btn, .btn_names {
@@ -69,16 +111,20 @@ h3 {
 }
 
 .accordion-button {
+  display: block;
+  text-align: center;
   background-color: #C396F0;
   color: white;
   font-family: "Gentium Plus", serif;
-  text-align: center;
   font-size: 1.3rem;
   border: none;
 }
 .accordion-button:not(.collapsed) {
   background-color: #fff;
   color: #C396F0;
+}
+.accordion-button:focus {
+  box-shadow: none;
 }
 
 .illustrations {
@@ -93,5 +139,12 @@ h3 {
     box-shadow: 0 0 5px 3px rgba(145, 80, 206, 0.644);
   }
 }
+.banner {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  min-width: 320px;
+  height: 40vh;
+}
 
-/*# sourceMappingURL=stylesass.css.map */
+/*# sourceMappingURL=sassstyle.css.map */

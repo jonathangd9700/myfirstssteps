@@ -24,14 +24,18 @@
     margin-top: 13px;
 }
 .accordion-button{
+    display: block;
+    text-align: center;
     background-color: $secondary-color;
     color: $text-color;
     font-family: $primary-font;
-    text-align: center;
     font-size: 1.3rem;
     border: none;
     &:not(.collapsed){
         background-color: #fff;
         color: $secondary-color;
+    }
+    &:focus{
+        box-shadow: none;
     }
 }

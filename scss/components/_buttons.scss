@@ -1,11 +1,11 @@
-.btn, .btn_names{
+.btn{
+    @extend .letraMediana;
     cursor: pointer;
     height: 40px;
     width: 80px;
     background-color: $secondary-color;
     border-radius: 10px;
     color: $text-color;
-    font-size: 1.3rem;
     font-family: $primary-font;
     border-width: 0px;
     font-weight: bold;
@@ -20,6 +20,7 @@
 
 }
 .btn_names{
+    @extend .btn;
     width: 190px;
     margin-top: 13px;
 }

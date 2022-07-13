@@ -1,8 +1,11 @@
 *{
     font-family:$primary-font;
 }
+body{
+    @include flexColumBody;
+}
 .bg-color-bootstrap{
-    background-color: $primary-color;
+    background-color: map-get($map: $colors, $key: colorPrincipal);
 }
 
 a {
@@ -12,24 +15,41 @@ a {
         color: $text-color;
     }
 }
+h1{
+    color: $text-color;
+    background-color: map-get($map: $colors, $key: colorSecundario);
+    text-align: center;
+}
 h2{
     color: $text-color;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     text-align: center;
 }
 h3{
     color: $text-color;
 }
 p{
-    color: $secondary-color;
+    color: map-get($map: $colors, $key: colorSecundario);
     text-align: center;
     background-color: rgba(0, 0, 0, 0.034);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .nav-link{
     color: $text-color !important;
     &.active{
         color: $text-color !important;
+    }
+    @include tablet{
+        font-size: 1.1rem;
+    }
+    @include desktop{
+        font-size: 1.3rem;
+    }
+    @include bigSizeScreen{
+        font-size: 1.7rem;
+    }
+    @include veryBigSizeScreen{
+        font-size: 2.3rem;
     }
 }
 .navbar-toggler{
@@ -48,9 +68,21 @@ p{
     width: 30%;
     min-width: 40px;
 }
-.container__footer--bootstrap li:hover{
-    animation: transition--menu--left 500ms forwards;
+.container__footer--bootstrap li{
+    @include tablet{
+        font-size: 1.1rem;
+    }
+    @include desktop{
+        font-size: 1.3rem;
+    }
+    @include bigSizeScreen{
+        font-size: 1.5rem;
+    }
+    &:hover{
+        animation: transition--menu--left 500ms forwards;   
+    }
 }
+
 @keyframes transition--menu--left{
     from{transform: translateX(0);}
     to{transform: translateX(-10px);}

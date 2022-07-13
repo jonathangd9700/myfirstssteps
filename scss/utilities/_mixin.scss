@@ -1,0 +1,20 @@
+@mixin fontSize ($size){
+    font-size: $size;
+}
+
+.letraChica{
+    @include fontSize(1.2rem);
+}
+.letraMediana{
+    @include fontSize(1.4rem);
+}
+.letraGrande{
+    @include fontSize(1.6rem);
+}
+
+@mixin flexColumBody {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}

@@ -1,0 +1,11 @@
+$colors:(
+    colorPrincipal:$primary-color,
+    colorSecundario: $secondary-color
+);
+
+@each $colorActual, $color in $colors{
+    .#{$colorActual}{
+        color: ($color);
+    }
+}
+

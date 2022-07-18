@@ -32,11 +32,16 @@
     font-family: $primary-font;
     font-size: 1.3rem;
     border: none;
+    transition: transform 300ms ease;
     &:not(.collapsed){
         background-color: #fff;
         color: $secondary-color;
+        transform: none;
     }
     &:focus{
         box-shadow: none;
     }
-}
+        &:hover{
+            transform: scale(.9);
+        }
+    }

@@ -42,9 +42,12 @@ a:hover {
 }
 
 h1 {
+  display: inline-flex;
+  justify-content: flex-start;
+  padding: 0 10px 0 10px;
+  margin-top: 10px;
   color: white;
   background-color: #C396F0;
-  text-align: center;
 }
 
 h2 {
@@ -152,6 +155,104 @@ p {
   background-color: #C396F0;
 }
 
+.textoSobreMi {
+  padding: 3rem;
+  letter-spacing: 2px;
+}
+
+.positionImgSobreMi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0.1;
+}
+.positionImgSobreMi img {
+  width: 200px;
+}
+@media screen and (min-width: 680px) {
+  .positionImgSobreMi {
+    flex-direction: row;
+  }
+}
+
+.positionBgImages {
+  position: absolute;
+  margin-top: 20px;
+  width: 85%;
+  z-index: -100;
+}
+
+.backgroundImages {
+  display: grid;
+  min-width: 100%;
+  height: 100%;
+  row-gap: 25px;
+  grid-template-rows: repeat(auto, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 680px) {
+  .positionBgImages {
+    width: 95%;
+  }
+  .backgroundImages {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .bgImage10 {
+    display: none;
+  }
+}
+.bgImages, .bgImage10, .bgImages9, .bgImages8, .bgImages7, .bgImages6, .bgImages5, .bgImages4, .bgImages3, .bgImages2, .bgImages1 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.15;
+  height: 150px;
+  transform: rotate(15deg);
+}
+
+.bgImages1 {
+  background-image: url(../images/illustrations/producto11.jpeg);
+}
+
+.bgImages2 {
+  background-image: url(../images/illustrations/producto3.jpeg);
+}
+
+.bgImages3 {
+  background-image: url(../images/illustrations/producto10.jpeg);
+}
+
+.bgImages4 {
+  background-image: url(../images/illustrations/producto1.jpeg);
+}
+
+.bgImages5 {
+  background-image: url(../images/illustrations/producto9.jpeg);
+}
+
+.bgImages6 {
+  background-image: url(../images/illustrations/producto7.jpeg);
+}
+
+.bgImages7 {
+  background-image: url(../images/illustrations/producto3.jpeg);
+}
+
+.bgImages8 {
+  background-image: url(../images/illustrations/producto5.jpeg);
+}
+
+.bgImages9 {
+  background-image: url(../images/illustrations/producto8.jpeg);
+}
+
+.bgImage10 {
+  background-image: url(../images/illustrations/producto1.jpeg);
+}
+
 .btn, .btn_names {
   cursor: pointer;
   height: 40px;
@@ -185,13 +286,18 @@ p {
   font-family: "Gentium Plus", serif;
   font-size: 1.3rem;
   border: none;
+  transition: transform 300ms ease;
 }
 .accordion-button:not(.collapsed) {
   background-color: #fff;
   color: #C396F0;
+  transform: none;
 }
 .accordion-button:focus {
   box-shadow: none;
+}
+.accordion-button:hover {
+  transform: scale(0.9);
 }
 
 .illustrations {
@@ -210,13 +316,30 @@ p {
   display: flex;
   justify-content: center;
   width: 50%;
-  min-width: 320px;
-  height: 35vh;
+  min-width: 250px;
+  height: 142px;
 }
 
+@media screen and (min-width: 680px) {
+  .banner {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner {
+    height: 250px;
+  }
+}
 .logomoruk {
   width: 15%;
   min-width: 55px;
+}
+
+.ilustracionSobreMi {
+  display: block;
+  width: 250px;
+  border-radius: 2rem;
+  margin: 0 auto;
 }
 
 .input_style {

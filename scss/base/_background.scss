@@ -1,0 +1,75 @@
+.positionBgImages{
+    position:absolute;
+    margin-top: 20px;
+    width: 85%;
+    z-index: -100;
+}
+.backgroundImages{
+    display: grid;
+    min-width: 100%;
+    height: 100%;
+    row-gap: 25px;
+    grid-template-rows: repeat(auto,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+@include tablet{
+    .positionBgImages{
+        width: 95%;
+    }
+    .backgroundImages{
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .bgImage10{
+        display: none;
+    }
+}
+.bgImages{
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
+    opacity: .15;
+    height: 150px;
+    transform: rotate(15deg);
+}
+.bgImages1{
+    background-image: url(../images/illustrations/producto11.jpeg);
+    @extend .bgImages;
+}
+.bgImages2{
+    background-image: url(../images/illustrations/producto3.jpeg);
+    @extend .bgImages;
+}
+.bgImages3{
+    background-image: url(../images/illustrations/producto10.jpeg);
+    @extend .bgImages;
+}
+.bgImages4{
+    background-image: url(../images/illustrations/producto1.jpeg);
+    @extend .bgImages;
+}
+.bgImages5{
+    background-image: url(../images/illustrations/producto9.jpeg);
+    @extend .bgImages;
+}
+.bgImages6{
+    background-image: url(../images/illustrations/producto7.jpeg);
+    @extend .bgImages;
+}
+.bgImages7{
+    background-image: url(../images/illustrations/producto3.jpeg);
+    @extend .bgImages;
+}
+.bgImages8{
+    background-image: url(../images/illustrations/producto5.jpeg);
+    @extend .bgImages;
+}
+.bgImages9{
+    background-image: url(../images/illustrations/producto8.jpeg);
+    @extend .bgImages;
+}
+.bgImage10{
+    background-image: url(../images/illustrations/producto1.jpeg);
+    @extend .bgImages;
+}
+

@@ -13,10 +13,26 @@
     display: flex;
     justify-content: center;
     width: 50%;
-    min-width: 320px;
-    height: 35vh;
+    min-width: 250px;
+    height: 142px;
+}
+@include tablet{
+    .banner{
+        height: 200px;
+    }
+}
+@include desktop{
+    .banner{
+        height: 250px;
+    }
 }
 .logomoruk{
     width: 15%;
     min-width: 55px;
+}
+.ilustracionSobreMi{
+    display: block;
+    width: 250px;
+    border-radius: 2rem;
+    margin: 0 auto;
 }

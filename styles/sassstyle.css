@@ -180,7 +180,6 @@ p {
   position: absolute;
   margin-top: 20px;
   width: 85%;
-  height: 100vh;
   z-index: -100;
 }
 

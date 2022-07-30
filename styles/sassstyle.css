@@ -147,12 +147,11 @@ p {
 
 .txt_contacto {
   color: #C396F0;
-  transition: background-color 300ms ease, color 300ms ease;
+  transition: transform 300ms ease, color 300ms ease;
 }
 
 .txt_contacto:hover {
-  color: white;
-  background-color: #C396F0;
+  transform: scale(0.9);
 }
 
 .textoSobreMi {
@@ -190,6 +189,13 @@ p {
   row-gap: 25px;
   grid-template-rows: repeat(auto, 1fr);
   grid-template-columns: repeat(2, 1fr);
+}
+
+.backgroundImagesIllustrations {
+  background-size: contain;
+  background-position: center;
+  opacity: 0.6;
+  align-items: center;
 }
 
 @media screen and (min-width: 680px) {
@@ -253,6 +259,74 @@ p {
   background-image: url(../images/illustrations/producto1.jpeg);
 }
 
+#ranavaqueraModal {
+  margin: 0 auto;
+  align-items: center;
+  background-image: url(../images/background/salvaje-oeste.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#ranalenadoraModal {
+  background-image: url(../images/background/arboles-talados.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#ranafrutillaModal {
+  background-image: url(../images/background/frutos-del-bosque.webp);
+}
+
+#ranamoraModal {
+  background-image: url(../images/background/fondo-moras.jpg);
+  background-position: center;
+}
+
+#psicoranaModal {
+  background-image: url(../images/background/fondopsicorana.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#ranaobreraModal {
+  background-image: url(../images/background/fondo-obrera.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+#avocatoModal {
+  background-image: url(../images/background/fondo-avocato.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
+#tricancopitoModal {
+  background-image: url(../images/background/fondo-trican.jpg);
+  background-position: left;
+  background-size: contain;
+}
+
+#anoukModal {
+  background-image: url(../images/background/fondo-anouk.webp);
+  background-position: center;
+  background-size: contain;
+}
+
+#wildpantherModal {
+  background-image: url(../images/background/fondo-selva.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+#happypizzaModal {
+  background-image: url(../images/background/fondo-pizza.jpg);
+  background-position: center;
+  background-size: contain;
+}
+
 .btn, .btn_names {
   cursor: pointer;
   height: 40px;
@@ -274,7 +348,7 @@ p {
 }
 
 .btn_names {
-  width: 190px;
+  width: 200px;
   margin-top: 13px;
 }
 
@@ -342,6 +416,22 @@ p {
   margin: 0 auto;
 }
 
+.containerImagenSoporte {
+  margin: 15px 0 15px 0;
+}
+.containerImagenSoporte img {
+  width: 70px;
+  transition: transform 200ms ease-in;
+}
+.containerImagenSoporte img:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (min-width: 1024px) {
+  .containerImagenSoporte img {
+    width: 100px;
+  }
+}
 .input_style {
   border-width: 0 0 1px 0;
 }

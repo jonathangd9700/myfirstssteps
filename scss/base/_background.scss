@@ -12,6 +12,12 @@
     grid-template-rows: repeat(auto,1fr);
     grid-template-columns: repeat(2,1fr);
 }
+.backgroundImagesIllustrations{
+    background-size: contain;
+    background-position: center;
+    opacity: .6;
+    align-items: center;
+}
 @include tablet{
     .positionBgImages{
         width: 95%;
@@ -25,7 +31,7 @@
     }
 }
 .bgImages{
-    background-size: contain;
+    background-size:contain;
     background-position:center;
     background-repeat: no-repeat;
     opacity: .15;
@@ -72,4 +78,60 @@
     background-image: url(../images/illustrations/producto1.jpeg);
     @extend .bgImages;
 }
-
+#ranavaqueraModal{
+    margin: 0 auto;
+    align-items: center;
+    background-image:  url(../images/background/salvaje-oeste.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+#ranalenadoraModal{
+    background-image:  url(../images/background/arboles-talados.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#ranafrutillaModal{
+    background-image:  url(../images/background/frutos-del-bosque.webp);
+}
+#ranamoraModal{
+    background-image:  url(../images/background/fondo-moras.jpg);
+    background-position: center;    
+}
+#psicoranaModal{
+    background-image:  url(../images/background/fondopsicorana.jpg);
+    background-position: center;   
+    background-size: cover;
+}
+#ranaobreraModal{
+    background-image:  url(../images/background/fondo-obrera.jpg);
+    background-position: center;   
+    background-size: contain;
+}
+#avocatoModal{
+    background-image:  url(../images/background/fondo-avocato.jpg);
+    background-position: center;   
+    background-size: contain;
+}
+#tricancopitoModal{
+    background-image:  url(../images/background/fondo-trican.jpg);
+    background-position: left;   
+    background-size: contain;
+}
+#anoukModal{
+    background-image:  url(../images/background/fondo-anouk.webp);
+    background-position: center;   
+    background-size: contain;
+}
+#wildpantherModal{
+    background-image:  url(../images/background/fondo-selva.webp);
+    background-position: center;   
+    background-size: cover;
+}
+#happypizzaModal{
+    background-image:  url(../images/background/fondo-pizza.jpg);
+    background-position: center;   
+    background-size: contain;
+}

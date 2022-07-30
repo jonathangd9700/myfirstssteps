@@ -96,11 +96,10 @@ p{
 }
 .txt_contacto{
     color: $secondary-color;
-    transition: background-color 300ms ease, color 300ms ease;
+    transition: transform 300ms ease, color 300ms ease;
 }
 .txt_contacto:hover{
-    color: $text-color;
-    background-color: $secondary-color;
+    transform: scale(.9);
 }
 .textoSobreMi{
     padding: 3rem;

@@ -39,7 +39,7 @@
     transform: rotate(15deg);
 }
 .bgImages1{
-    background-image: url(../images/illustrations/producto11.jpeg);
+    background-image: url(../images/illustrations/frog6.jpeg);
     @extend .bgImages;
 }
 .bgImages2{
@@ -47,7 +47,7 @@
     @extend .bgImages;
 }
 .bgImages3{
-    background-image: url(../images/illustrations/producto10.jpeg);
+    background-image: url(../images/illustrations/frog5.jpeg);
     @extend .bgImages;
 }
 .bgImages4{
@@ -108,7 +108,12 @@
 #ranaobreraModal{
     background-image:  url(../images/background/fondo-obrera.jpg);
     background-position: center;   
-    background-size: contain;
+    background-size: cover;
+}
+@include tablet{
+    #ranaobreraModal{
+        background-size: contain;
+    }
 }
 #avocatoModal{
     background-image:  url(../images/background/fondo-avocato.jpg);
@@ -117,9 +122,16 @@
 }
 #tricancopitoModal{
     background-image:  url(../images/background/fondo-trican.jpg);
-    background-position: left;   
-    background-size: contain;
+    background-position: center;   
+    background-size: cover;
 }
+@include tablet{
+    #tricancopitoModal{
+        background-position: left;
+        background-size: contain;
+    }
+}
+
 #anoukModal{
     background-image:  url(../images/background/fondo-anouk.webp);
     background-position: center;   
@@ -131,7 +143,23 @@
     background-size: cover;
 }
 #happypizzaModal{
-    background-image:  url(../images/background/fondo-pizza.jpg);
+    background-image:  url(../images/background/fondo-pizza.webp);
     background-position: center;   
     background-size: contain;
+}
+#jukyModal{
+    background-image: url(../images/background/fondo-playa.jpg);
+    background-size: cover;
+}
+#coctelModal{
+    background-image: url(../images/background/fondo-cocteles.jpeg);
+    background-size: 400px;
+}
+#moonflowersModal{
+    background-image: url(../images/background/fondo-moonflowers.webp);
+    background-size: 300px;
+}
+#bluModal{
+    background-image: url(../images/background/fondo-dinosaurios.webp);
+    background-size: 150px;
 }

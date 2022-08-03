@@ -51,3 +51,25 @@
         width: 100px;
     }
 }
+.logosFooter{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    & li{
+        padding: 5px;
+    }
+    & img{
+        width: 45px;
+    }
+}
+@include tablet{
+    .logosFooter{
+    justify-content: space-around;
+    & img{
+        width: 70px;
+    }
+    }
+}

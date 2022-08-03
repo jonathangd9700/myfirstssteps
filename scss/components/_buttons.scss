@@ -19,6 +19,17 @@
     }
 
 }
+.btnModal{
+    background-color: none;
+    text-align: center;
+    align-content: center;
+    width: 100px;
+    height: 50px;
+    font-family: $primary-font;
+    color: $text-color;
+    border-radius: 10px;
+    border-width: 0px;
+}
 .btn_names{
     @extend .btn;
     width: 200px;

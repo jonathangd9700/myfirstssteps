@@ -60,6 +60,22 @@ h3 {
   color: white;
 }
 
+h4 {
+  margin: 10px auto 10px auto;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  background-color: rgba(196, 89, 196, 0.2470588235);
+}
+
+h6 {
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 10px auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
 p {
   color: #C396F0;
   text-align: center;
@@ -175,6 +191,79 @@ p {
   }
 }
 
+.modal-footer {
+  border-top: none;
+}
+
+.bgYellow {
+  text-align: center;
+  font-weight: bolder;
+  background: #e7e74f;
+}
+
+.bgGreen {
+  text-align: center;
+  font-weight: bolder;
+  background: #20a520;
+}
+
+.bgRed {
+  text-align: center;
+  font-weight: bolder;
+  background: #e02f2f;
+}
+
+.bgPsico {
+  text-align: center;
+  font-weight: bolder;
+  background: linear-gradient(90deg, rgba(48, 21, 255, 0.829) 17%, rgba(147, 61, 222, 0.8519782913) 35%, rgba(234, 0, 255, 0.815) 100%);
+}
+
+.bgGrey {
+  text-align: center;
+  font-weight: bolder;
+  background: #6d6c6c;
+}
+
+.bgPinkcake {
+  text-align: center;
+  font-weight: bolder;
+  background: #ffc0cb;
+}
+
+.bgLightblue {
+  text-align: center;
+  font-weight: bolder;
+  background: #67c5e4;
+}
+
+.bgBrown {
+  text-align: center;
+  font-weight: bolder;
+  background: #862525;
+}
+
+.bgViolet {
+  background: #c459c4;
+}
+
+.bgBlackorange {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(207, 53, 18) 70%);
+}
+
+.bgBlackwhite {
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+}
+
+.modal {
+  --bs-modal-bg: none;
+  --bs-modal-border-width: 0px;
+}
+.modal-header {
+  border-bottom: 0px;
+  margin-bottom: 5px;
+}
+
 .positionBgImages {
   position: absolute;
   margin-top: 20px;
@@ -220,7 +309,7 @@ p {
 }
 
 .bgImages1 {
-  background-image: url(../images/illustrations/producto11.jpeg);
+  background-image: url(../images/illustrations/frog6.jpeg);
 }
 
 .bgImages2 {
@@ -228,7 +317,7 @@ p {
 }
 
 .bgImages3 {
-  background-image: url(../images/illustrations/producto10.jpeg);
+  background-image: url(../images/illustrations/frog5.jpeg);
 }
 
 .bgImages4 {
@@ -294,9 +383,14 @@ p {
 #ranaobreraModal {
   background-image: url(../images/background/fondo-obrera.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
+@media screen and (min-width: 680px) {
+  #ranaobreraModal {
+    background-size: contain;
+  }
+}
 #avocatoModal {
   background-image: url(../images/background/fondo-avocato.jpg);
   background-position: center;
@@ -305,10 +399,16 @@ p {
 
 #tricancopitoModal {
   background-image: url(../images/background/fondo-trican.jpg);
-  background-position: left;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
 }
 
+@media screen and (min-width: 680px) {
+  #tricancopitoModal {
+    background-position: left;
+    background-size: contain;
+  }
+}
 #anoukModal {
   background-image: url(../images/background/fondo-anouk.webp);
   background-position: center;
@@ -322,9 +422,29 @@ p {
 }
 
 #happypizzaModal {
-  background-image: url(../images/background/fondo-pizza.jpg);
+  background-image: url(../images/background/fondo-pizza.webp);
   background-position: center;
   background-size: contain;
+}
+
+#jukyModal {
+  background-image: url(../images/background/fondo-playa.jpg);
+  background-size: cover;
+}
+
+#coctelModal {
+  background-image: url(../images/background/fondo-cocteles.jpeg);
+  background-size: 400px;
+}
+
+#moonflowersModal {
+  background-image: url(../images/background/fondo-moonflowers.webp);
+  background-size: 300px;
+}
+
+#bluModal {
+  background-image: url(../images/background/fondo-dinosaurios.webp);
+  background-size: 150px;
 }
 
 .btn, .btn_names {
@@ -345,6 +465,18 @@ p {
   background-color: #fff;
   color: #C396F0;
   border: 1px solid #C396F0;
+}
+
+.btnModal {
+  background-color: none;
+  text-align: center;
+  align-content: center;
+  width: 100px;
+  height: 50px;
+  font-family: "Gentium Plus", serif;
+  color: white;
+  border-radius: 10px;
+  border-width: 0px;
 }
 
 .btn_names {
@@ -430,6 +562,29 @@ p {
 @media screen and (min-width: 1024px) {
   .containerImagenSoporte img {
     width: 100px;
+  }
+}
+.logosFooter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.logosFooter li {
+  padding: 5px;
+}
+.logosFooter img {
+  width: 45px;
+}
+
+@media screen and (min-width: 680px) {
+  .logosFooter {
+    justify-content: space-around;
+  }
+  .logosFooter img {
+    width: 70px;
   }
 }
 .input_style {

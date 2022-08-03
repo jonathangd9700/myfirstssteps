@@ -31,6 +31,20 @@ h2{
 h3{
     color: $text-color;
 }
+h4{
+    margin: 10px auto 10px auto;
+    text-align: center;
+    color: $text-color;
+    padding: 5px;
+    background-color: #c459c43f;
+}
+h6{
+    color: $text-color;
+    text-align: center;
+    font-size: .8rem;
+    margin: 10px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 p{
     color: map-get($map: $colors, $key: colorSecundario);
     text-align: center;
@@ -67,29 +81,6 @@ p{
     border-bottom: 2px solid white;
     background-color: rgba(180, 128, 228, 0.521); 
 }
-.footer__logo{
-    width: 30%;
-    min-width: 40px;
-}
-.container__footer--bootstrap li{
-    @include tablet{
-        font-size: 1.1rem;
-    }
-    @include desktop{
-        font-size: 1.3rem;
-    }
-    @include bigSizeScreen{
-        font-size: 1.5rem;
-    }
-    &:hover{
-        animation: transition--menu--left 500ms forwards;   
-    }
-}
-
-@keyframes transition--menu--left{
-    from{transform: translateX(0);}
-    to{transform: translateX(-10px);}
-}
 .gmap_canvas{
     overflow:hidden;
     background:none!important;
@@ -116,5 +107,65 @@ p{
     }
     @include tablet{
         flex-direction: row;
+    }
+}
+.modal-footer{
+    border-top: none;
+}
+.bgYellow{
+    text-align: center;
+    font-weight: bolder;
+    background: #e7e74f;
+}
+.bgGreen{
+    text-align: center;
+    font-weight: bolder;
+    background: #20a520;
+}
+.bgRed{
+    text-align: center;
+    font-weight: bolder;
+    background: #e02f2f;
+}
+.bgPsico{
+    text-align: center;
+    font-weight: bolder;
+    background: linear-gradient(90deg, rgba(48, 21, 255, 0.829) 17%, rgba(147,61,222,0.8519782913165266) 35%, rgba(234, 0, 255, 0.815) 100%);
+}
+.bgGrey{
+    text-align: center;
+    font-weight: bolder;
+    background: #6d6c6c;
+}
+.bgPinkcake{
+    text-align: center;
+    font-weight: bolder;
+    background: #ffc0cb;
+}
+.bgLightblue{
+    text-align: center;
+    font-weight: bolder;
+    background:#67c5e4;
+}
+.bgBrown{
+    text-align: center;
+    font-weight: bolder;
+    background: #862525;
+}
+.bgViolet{
+    background: #c459c4;
+}
+.bgBlackorange{
+    background: linear-gradient(90deg, rgba(0, 0, 0) 0%, rgba(207, 53, 18) 70%);
+}
+.bgBlackwhite{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+}
+.modal{
+    --bs-modal-bg: none;
+    --bs-modal-border-width: 0px;
+    &-header{
+        border-bottom: 0px;
+        margin-bottom: 5px;
     }
 }

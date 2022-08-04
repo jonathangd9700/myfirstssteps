@@ -124,38 +124,6 @@ p {
   background-color: rgba(180, 128, 228, 0.521);
 }
 
-.footer__logo {
-  width: 30%;
-  min-width: 40px;
-}
-
-@media screen and (min-width: 680px) {
-  .container__footer--bootstrap li {
-    font-size: 1.1rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .container__footer--bootstrap li {
-    font-size: 1.3rem;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .container__footer--bootstrap li {
-    font-size: 1.5rem;
-  }
-}
-.container__footer--bootstrap li:hover {
-  animation: transition--menu--left 500ms forwards;
-}
-
-@keyframes transition--menu--left {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-10px);
-  }
-}
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
@@ -381,7 +349,7 @@ p {
 }
 
 #ranaobreraModal {
-  background-image: url(../images/background/fondo-obrera.jpg);
+  background-image: url(../images/background/fondo-obrera.webp);
   background-position: center;
   background-size: cover;
 }
@@ -398,7 +366,7 @@ p {
 }
 
 #tricancopitoModal {
-  background-image: url(../images/background/fondo-trican.jpg);
+  background-image: url(../images/background/fondo-trican.webp);
   background-position: center;
   background-size: cover;
 }
@@ -585,6 +553,10 @@ p {
   }
   .logosFooter img {
     width: 70px;
+    transition: transform 250ms ease-in;
+  }
+  .logosFooter img:hover {
+    transform: scale(1.1);
   }
 }
 .input_style {

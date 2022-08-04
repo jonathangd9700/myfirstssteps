@@ -70,6 +70,10 @@
     justify-content: space-around;
     & img{
         width: 70px;
+        transition: transform 250ms ease-in;
+    &:hover{
+            transform: scale(1.1);
+        }
     }
     }
 }
